@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+</head>
+<body>
+	<div class="main-container">
+		<div class="main-container__title">
+			Условные операторы
+		</div>
+		<div class="task">
+			<div class="task__title">
+				1. Если а – четное посчитать а*б, иначе а+б
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="input-a" placeholder="Введите a">
+				<input type="number" class="task__input" id="input-b" placeholder="Введите b">
+				<br />
+				<button id="btn-calc" class="task__btn">Посчитать</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="task-1-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				2. Определить какой четверти принадлежит точка с координатами (х,у)
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="input-x" placeholder="Введите x">
+				<input type="number" class="task__input" id="input-y" placeholder="Введите y">
+				<br />
+				<button id="btn-ident" class="task__btn">Определить</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="task-2-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				3. Найти суммы только положительных из трех чисел
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="task-3-input-a" placeholder="Введите a">
+				<input type="number" class="task__input" id="task-3-input-b" placeholder="Введите b">
+				<input type="number" class="task__input" id="task-3-input-c" placeholder="Введите c">
+				<br />
+				<button id="task-3-btn-calc" class="task__btn">Посчитать</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="task-3-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				4. Посчитать выражение макс(а*б*с, а+б+с)+3
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="task-4-input-a" placeholder="Введите a">
+				<input type="number" class="task__input" id="task-4-input-b" placeholder="Введите b">
+				<input type="number" class="task__input" id="task-4-input-c" placeholder="Введите c">
+				<br />
+				<button id="task-4-btn-calc" class="task__btn">Посчитать</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="task-4-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				5. Написать программу определения оценки студента по его рейтингу,
+				на основе следующих правил (0-19 это F, 20-39 это E, 40-59 это D, 60-74 это C, 75-89 это B, 90-100 это A)
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="input-mark" placeholder="Введите оценку">
+				<button id="task-5-btn-ident" class="task__btn">Определить</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="task-5-result"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="main-container__title">
+			Циклы
+		</div>
+		<div class="task">
+			<div class="task__title">
+				1. Найти сумму четных чисел и их количество в диапазоне от 1 до 99
+			</div>
+			<div class="task__controls">
+				<button id="btn-find" class="task__btn">Найти</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<br />
+				Сумма:
+				<span id="sum"></span>
+				<br />
+				Количество:
+				<span id="count"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				2. Проверить простое ли число? (число называется простым, если оно делится только само на себя и на 1)
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="cycles-task-2-input-a" placeholder="Введите число">
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="cycles-task-2-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				3. Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="cycles-task-3-input-a" placeholder="Введите число">
+				<br />
+				<button id="cycles-task-3-btn-calc" class="task__btn">Найти</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="cycles-task-3-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				4. Вычислить факториал числа n. n! = 1*2*…*n-1*n;!
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="cycles-task-4-input-n" placeholder="Введите n">
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="cycles-task-4-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				5. Посчитать сумму цифр заданного числа
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="cycles-task-5-input-n" placeholder="Введите число">
+				<br />
+				<button id="cycles-task-5-btn-calc" class="task__btn">Посчитать</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="cycles-task-5-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				6. Вывести число, которое является зеркальным отображением последовательности цифр заданного числа, например, задано число 123, вывести 321.
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="cycles-task-6-input-n" placeholder="Введите число">
+				<br />
+				<button id="cycles-task-6-btn-reverse" class="task__btn">Вывести</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="cycles-task-6-result"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="main-container__title">
+			Одномерные массивы
+		</div>
+		<div class="task">
+			<div class="task__title">
+				1. Найти минимальный элемент массива
+				<br />
+				2. Найти максимальный элемент массива
+				<br />
+				3. Найти индекс минимального элемента массива
+				<br />
+				4. Найти индекс максимального элемента массива
+				<br />
+			</div>
+			<div class="task__controls">
+				Массив:
+				<span id="array"></span>
+				<br />
+				<button id="arrays-task-1-4-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<br />
+				Max:
+				<span id="max"></span>
+				<br />
+				Индекс максимального ел-та массива: 
+				<span id="max-index"></span>
+				<br />
+				Min:
+				<span id="min"></span>
+				<br />
+				Индекс минимального ел-та массива: 
+				<span id="min-index"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				5. Посчитать сумму элементов массива с нечетными индексами 
+			</div>
+			<div class="task__controls">
+				Массив:
+				<span id="arrays-task-5-array"></span>
+				<br />
+				<button id="arrays-task-5-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="arrays-task-5-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				6. Сделать реверс массива (массив в обратном направлении) 
+			</div>
+			<div class="task__controls">
+				Массив:
+				<span id="arrays-task-6-array"></span>
+				<br />
+				<button id="arrays-task-6-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="arrays-task-6-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				7. Посчитать количество нечетных элементов массива
+			</div>
+			<div class="task__controls">
+				<span id="arrays-task-7-array"></span>
+				<br />
+				<button id="arrays-task-7-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="arrays-task-7-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				8. Поменять местами первую и вторую половину массива, например, для массива 1 2 3 4, результат 3 4 1 2
+			</div>
+			<div class="task__controls">
+				Массив:
+				<span id="arrays-task-8-array"></span>
+				<br />
+				<button id="arrays-task-8-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="arrays-task-8-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				9. Отсортировать массив (пузырьком (Bubble), выбором (Select), вставками (Insert)) 
+			</div>
+			<div class="task__controls">
+				Массив:
+				<span id="arrays-task-9-array"></span>
+				<br />
+				<button id="arrays-task-9-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<br />
+				Bubble:
+				<span id="bubble-sort-array"></span>
+				<br />
+				Select:
+				<span id="select-sort-array"></span>
+				<br />
+				Insert:
+				<span id="insert-sort-array"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				10. Отсортировать массив (Quick, Merge, Shell, Heap) 
+			</div>
+			<div class="task__controls">
+				Массив:
+				<span id="arrays-task-10-array"></span>
+				<br />
+				<button id="arrays-task-10-btn-refresh" class="task__btn">Обновить массив</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<br />
+				Shell:
+				<span id="shell-sort-array"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="main-container__title">
+			Функции
+		</div>
+		<div class="task">
+			<div class="task__title">
+				1. Получить строковое название дня недели по номеру дня. 
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="functions-task-1-input-day" placeholder="Введите номер дня">
+				<br />
+				<button id="btn-find-out" class="task__btn">Получить</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="functions-task-1-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				2-5. Вводим число (0-999 миллиардов), получаем строку с прописью числа.
+			</div>
+			<div class="task__controls">
+				<input type="number" class="task__input" id="functions-task-2-input-number" placeholder="Введите число">
+				<br />
+				<button id="functions-task-2-btn-find-out" class="task__btn">Получить</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="functions-task-2-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				3-6. Вводим строку, которая содержит число, написанное прописью (0-999 миллиардов). Получить само число
+			</div>
+			<div class="task__controls">
+				<input type="text" class="task__input" id="functions-task-3-input-number" placeholder="Введите число прописью">
+				<br />
+				<button id="functions-task-3-btn-find-out" class="task__btn">Найти</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="functions-task-3-result"></span>
+			</div>
+		</div>
+
+		<div class="task">
+			<div class="task__title">
+				4. Найти расстояние между двумя точками в двумерном декартовом пространстве.
+			</div>
+			<div class="task__controls">
+				A: 
+				<br />
+				<input type="number" class="task__input" id="input-a-x" placeholder="Введите x">
+				<input type="number" class="task__input" id="input-a-y" placeholder="Введите y">
+				<br />
+				B:  
+				<br />
+				<input type="number" class="task__input" id="input-b-x" placeholder="Введите x">
+				<input type="number" class="task__input" id="input-b-y" placeholder="Введите y">
+				<br />
+				<button id="functons-task-4-btn-find-out" class="task__btn">Найти</button>
+			</div>
+			<div class="task__result">
+				Результат:
+				<span id="functons-task-4-result"></span>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+	<script src="js/conditionals/task-1.js"></script>
+	<script src="js/conditionals/task-2.js"></script>
+	<script src="js/conditionals/task-3.js"></script>
+	<script src="js/conditionals/task-4.js"></script>
+	<script src="js/conditionals/task-5.js"></script>
+	<script src="js/cycles/task-1.js"></script>
+	<script src="js/cycles/task-2.js"></script>
+	<script src="js/cycles/task-3.js"></script>
+	<script src="js/cycles/task-4.js"></script>
+	<script src="js/cycles/task-5.js"></script>
+	<script src="js/cycles/task-6.js"></script>
+	<script src="js/arrays/task-1-2-3-4.js"></script>
+	<script src="js/arrays/task-5.js"></script>
+	<script src="js/arrays/task-6.js"></script>
+	<script src="js/arrays/task-7.js"></script>
+	<script src="js/arrays/task-8.js"></script>
+	<script src="js/arrays/task-9.js"></script>
+	<script src="js/arrays/task-10.js"></script>
+	<script src="js/functions/task-1.js"></script>
+	<script src="js/functions/task-4.js"></script>
+	<script src="js/functions/task-2-5.js"></script>
+	<script src="js/functions/task-3-6.js"></script>
+</body>
+</html>
